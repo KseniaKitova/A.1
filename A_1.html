@@ -1,0 +1,77 @@
+<script>
+	
+	var sum = prompt("Enter sum: ");
+	
+	
+	  if (sum <0) {
+     alert (" введите правильную сумму");
+   } 
+			
+	
+	var tax1 = 0;
+	var tax2 = 0;
+	var tax3 = 0;
+		var tax4 = 0;
+			var tax5 = 0;
+				var tax6 = 0;
+	
+    if (sum < 9526) {
+		var tax1 = sum*0.10;
+		//alert (tax1 +" эта сумма налога tax rate 10%");
+		console.log(tax1);
+	}
+	else {
+		var tax1 = 9525*0.10;
+	}
+	
+	if (sum > 9525 && sum <= 38701	) {
+		var sum2 = sum-9525;
+		var tax2 = sum2*0.12;
+		alert (tax2 +" эта сумма налога tax rate 12%");
+				console.log(tax2);
+	}
+	else if(sum > 38701) {
+		var sum2 = 38701-9525;
+		var tax2 = sum2*0.12;
+	}
+
+	if (sum > 38701 && sum <= 157500	) {
+		var sum2 = sum-38701;
+		var tax3 = sum2*0.24;
+		alert (tax3 +" эта сумма налога tax rate 24%");
+	}
+	else if(sum > 157500) {
+		var sum2 = 157500-38701;
+		var tax3 = sum2*0.24;
+	}
+	
+	if (sum >= 157500 && sum <= 200000	) {
+		var sum2 = sum-157500;
+		var tax4 = sum2*0.32;
+		alert (tax4 +" эта сумма налога tax rate 32%");
+	}
+	else if(sum > 200000) {
+		var sum2 = 200000-157500;
+		var tax4 = sum2*0.32;
+	}
+
+	if (sum > 200000 && sum <= 500000	) {
+		var sum2 = sum-200000;
+		var tax5 = sum2*0.35;
+		alert (tax +" эта сумма налога tax rate 12%");
+	}
+	else if(sum > 500000) {
+		var sum2 = 500000-200000;
+		var tax5 = sum2*0.35;
+	}
+	
+	if (sum > 500000) {
+		var sum2 = sum-500000;
+		var tax6 = sum2*0.37;
+	}
+
+			
+	
+	var taxs = tax1+tax2+tax3+tax4+tax5+tax6;
+	alert(taxs);
+</script>
